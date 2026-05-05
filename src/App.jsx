@@ -5,6 +5,7 @@ import Main from './companents/Main/Main'
 import Company from './companents/Company-Page/Company'
 import TeamTemplate from "./companents/Team-Template/TeamTemplate";
 import Career from './companents/Career-Page/Career'
+import Inner from './companents/Inner/Inner'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/career" element={<Career />} />
         <Route path="/team-template" element={<TeamTemplate />} />
+        <Route path="/career-inner" element={<Inner />} />
       </Routes>
       <Footer />
     </BrowserRouter>
