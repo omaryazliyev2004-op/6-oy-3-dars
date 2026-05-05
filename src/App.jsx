@@ -1,16 +1,22 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './companents/Header/header'
-import Main from './companents/Main/Main'
 import Footer from './companents/Footer/footer'
+import Main from './companents/Main/Main'
+import Company from './companents/Company-Page/Company'
+import TeamTemplate from "./companents/Team-Template/TeamTemplate";
+import Career from './companents/Career-Page/Career'
 
-
-export default function Home() {
+export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/team-template" element={<TeamTemplate />} />
+      </Routes>
       <Footer />
-    </>
-
+    </BrowserRouter>
   )
 }

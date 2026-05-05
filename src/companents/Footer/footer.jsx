@@ -21,7 +21,7 @@ export default function Footer() {
                         </h2>
 
                         <h3 className="mt-[32px] text-[24px] font-semibold leading-[36px] text-[#232536]">
-                            Let&apos;s talk! 🤝
+                            Let's talk! 
                         </h3>
 
                         <a

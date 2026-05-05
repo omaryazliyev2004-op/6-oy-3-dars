@@ -6,10 +6,12 @@ import Sec_4 from './4-section/4-sec'
 import Sec_5 from './5-section/5-sec'
 import Sec_6 from './6-section/6-sec'
 import Sec_7 from './7-section/7-sec'
+import Hero from './Hero/Hero'
 
 export default function Main() {
   return (
     <main className=' '>
+        <Hero />
         <Sec_1 />
         <Sec_2 />
         <Sec_3 />
