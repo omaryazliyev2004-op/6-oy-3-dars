@@ -43,8 +43,8 @@ const processCards = [
 
 export default function Sec_4() {
   return (
-    <section className="max-w-[1530px] bg-white px-[20px] py-[72px] sm:px-[50px] lg:py-[100px] xc:px-[140px]">
-      <div className="max-w-[1280px]">
+    <section className="mx-[20px] bg-white px-[20px] py-[72px] sm:mx-[50px] sm:px-[50px] lg:py-[100px] xc:mx-[100px] xc:px-[80px]">
+      <div>
         <div className="flex items-start justify-between gap-[24px]">
           <div className="max-w-[625px]">
             <p className="text-[14px] font-medium uppercase tracking-[3px] text-[#232536]">

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Story() {
     return (
-        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
+        <section className='mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
             <div className='flex flex-col items-start justify-between gap-[48px] lg:flex-row lg:items-center'>
                 <div>
                     <div className='w-[16px] h-[16px] bg-[#444CFC] '></div>

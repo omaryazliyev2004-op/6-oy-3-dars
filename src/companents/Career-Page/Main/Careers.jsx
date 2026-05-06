@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Careers() {
     return (
-        <section className='mt-[72px] max-w-[1530px] px-[20px] pb-[72px] text-center sm:px-[50px] lg:mt-[96px] lg:pb-[96px] xc:px-[140px]'>
+        <section className='mt-[72px] mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] pb-[72px] text-center sm:px-[50px] lg:mt-[96px] lg:pb-[96px] xc:px-[140px]'>
             <span className='text-center font-[500] text-[14px] opacity-[87%] text-[#232536] '>CAREER AT FINSWEET</span>
             <div className='text-center w-full'>
                 <h2 className='mx-auto mt-[24px] max-w-[600px] text-center text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>We hired people who are

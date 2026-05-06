@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Sec_1() {
     return (
-        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
+        <section className='mx-[20px] px-[20px] py-[72px] sm:mx-[50px] sm:px-[50px] lg:py-[98px] xc:mx-[100px] xc:px-[80px]'>
             <div className='grid gap-[32px] lg:grid-cols-2 lg:items-center'>
                 <div>
                     <p className='font-medium text-[14px] leading-[20px] space-x-[3px] text-[#000000] '>ABOUT US</p>

@@ -17,10 +17,13 @@ export default function Info() {
     const navigate = useNavigate()
 
     return (
-        <section className="max-w-[1530px] bg-[#ECF8F9] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
+        <section className="mx-[20px] sm:mx-[50px] xc:mx-[100px] bg-[#ECF8F9] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
             <div className="grid gap-[24px] md:grid-cols-2 lg:grid-cols-3 lg:gap-[32px]">
                 {jobs.map(job => (
-                    <div key={job.id} className="bg-white p-[32px]">
+                    <div
+                        key={job.id}
+                        className="border border-transparent bg-white p-[32px] transition-all duration-300 hover:-translate-y-[6px] hover:border-[#FFD3AF] hover:shadow-[0_24px_48px_rgba(35,37,54,0.12)]"
+                    >
                         <h3 className="font-[600] text-[#232536]">{job.title}</h3>
                         <p className="mt-[8px] text-[#5D5F6D]">{job.location}</p>
                         <p className="text-[#5D5F6D]">{job.salary}</p>

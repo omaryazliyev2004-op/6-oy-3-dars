@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Sec_5() {
     return (
-        <section className='flex max-w-[1530px] flex-col items-start justify-between gap-[48px] bg-[#F9F9FF] px-[20px] py-[72px] sm:px-[50px] lg:flex-row lg:items-center lg:py-[102px] xc:px-[140px]'>
+        <section className='mx-[20px] flex flex-col items-start justify-between gap-[48px] bg-[#F9F9FF] px-[20px] py-[72px] sm:mx-[50px] sm:px-[50px] lg:flex-row lg:items-center lg:py-[102px] xc:mx-[100px] xc:px-[80px]'>
             <div>
                 <div className='w-[16px] h-[16px] bg-[#666DFF] '></div>
                 <h2 className='mt-[16px] max-w-[492px] text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>Our customers love what we do</h2>

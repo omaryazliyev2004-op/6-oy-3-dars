@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hero() {
     return (
         <section className='bg-[#232536]'>
-            <nav className='flex flex-col items-start justify-between gap-[48px] px-[20px] pt-[64px] sm:px-[50px] lg:flex-row lg:items-center xc:px-[140px] lg:pt-[96px]'>
+            <nav className='mx-[20px] flex flex-col items-start justify-between gap-[48px] px-[20px] pt-[64px] sm:mx-[50px] sm:px-[50px] lg:flex-row lg:items-center lg:pt-[96px] xc:mx-[100px] xc:px-[80px]'>
                 <div className=''>
                     <div className='w-[24px] h-[24px] bg-[#FFFFFF0F] rotation-[90]'></div>
                     <h2 className='mt-[24px] max-w-[600px] text-[34px] font-semibold leading-[44px] text-[#FFFFFF] sm:text-[44px] sm:leading-[56px] lg:text-[56px] lg:leading-[68px]'>Transform Your Idea Into Reality with Finsweet</h2>
@@ -34,7 +34,7 @@ export default function Hero() {
 
                 </div>
             </nav>
-            <div className='grid grid-cols-2 items-center gap-[24px] px-[20px] pb-[32px] pt-[32px] sm:px-[50px] md:grid-cols-3 lg:flex lg:justify-between xc:px-[140px]'>
+            <div className='mx-[20px] grid grid-cols-2 items-center gap-[24px] px-[20px] pb-[32px] pt-[32px] sm:mx-[50px] sm:px-[50px] md:grid-cols-3 lg:flex lg:justify-between xc:mx-[100px] xc:px-[80px]'>
                 <div className='col-span-2 md:col-span-3 lg:col-span-1'>
                     <span className='font-medium text-[14px] leading-[20px] text-[#FFFFFF] opacity-[60%] '>Our Clients</span>
                     <p className='text-[#FFFFFF] font-medium text-[18px] leading-[28px] '>We've Worked with</p>

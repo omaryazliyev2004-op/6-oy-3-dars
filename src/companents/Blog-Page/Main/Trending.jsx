@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Trending() {
     return (
-        <section className='mt-[72px] max-w-[1530px] px-[20px] pb-[72px] sm:px-[50px] lg:mt-[96px] lg:pb-[96px] xc:px-[140px]'>
+        <section className='mt-[72px] mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] pb-[72px] sm:px-[50px] lg:mt-[96px] lg:pb-[96px] xc:px-[140px]'>
             <div className='flex flex-col items-start justify-between gap-[48px] lg:flex-row'>
                 <div>
                     <div className='w-[24px] h-[24px] bg-[#FFD3AF] '></div>

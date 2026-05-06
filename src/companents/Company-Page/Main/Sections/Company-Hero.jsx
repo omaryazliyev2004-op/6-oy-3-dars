@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Company_Hero() {
   return (
-    <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
+    <section className='mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
       <div className='flex flex-col items-start justify-between gap-[32px] lg:flex-row'>
         <div>
           <div className='w-[28px] h-[28px] bg-[#FFD3AFFF] '></div>

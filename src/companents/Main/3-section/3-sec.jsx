@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Sec_3() {
     return (
-        <section className="max-w-[1530px] bg-[#FFE6D2] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
+        <section className="mx-[20px] bg-[#FFE6D2] px-[20px] py-[72px] sm:mx-[50px] sm:px-[50px] lg:py-[96px] xc:mx-[100px] xc:px-[80px]">
             <div>
                 <p className='text-[14px] leading-[20px] space-x-[3px] text-[#000000] opacity-[87%] font-[500] '>OUR SERVICES</p>
                 <h2 className='mt-[12px] max-w-[730px] text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>We build software solutions that solve client's business challenges</h2>

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Sec_6() {
   return (
-    <section className="max-w-[1530px] bg-white px-[20px] py-[72px] sm:px-[50px] lg:py-[120px] xc:px-[80px]">
-      <div className="relative min-h-[333px] w-full max-w-[1256px] overflow-hidden bg-[#666DFF] px-[24px] py-[56px] sm:px-[48px] lg:px-[96px] lg:py-[72px]">
+    <section className="mx-[20px] bg-white px-[20px] py-[72px] sm:mx-[50px] sm:px-[50px] lg:py-[120px] xc:mx-[100px] xc:px-[80px]">
+      <div className="relative min-h-[333px] w-full overflow-hidden bg-[#666DFF] px-[24px] py-[56px] sm:px-[48px] lg:px-[96px] lg:py-[72px]">
         <div className="absolute left-0 top-0 grid grid-cols-2 gap-0">
           <span className="h-[20px] w-[20px] bg-[#FFA155]" />
           <span className="h-[20px] w-[20px] bg-[#FFD3AF]" />

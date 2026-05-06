@@ -17,8 +17,8 @@ const cards = [
 
 export default function Sec_2() {
   return (
-    <section className="mt-[72px] max-w-[1530px] bg-[#ECF8F9] px-[20px] py-[72px] sm:px-[50px] lg:mt-[96px] lg:py-[96px] xc:px-[140px]">
-      <div className="flex max-w-[1280px] flex-col items-start justify-between gap-[48px] lg:flex-row lg:items-center lg:gap-[80px]">
+    <section className="mx-[20px] mt-[72px] bg-[#ECF8F9] px-[20px] py-[72px] max-w-[1530px]  sm:mx-[50px] sm:px-[50px] lg:mt-[96px] lg:py-[96px] xc:mx-[100px] xc:px-[80px]">
+      <div className="flex flex-col items-start justify-between gap-[48px] lg:flex-row lg:items-center lg:gap-[80px]">
         <div className="max-w-[620px]">
           <p className="text-[14px] font-medium uppercase tracking-[3px] text-[#232536]">
             Our Expertise

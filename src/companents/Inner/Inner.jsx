@@ -15,47 +15,47 @@ const jobs = [
   { id: 9, title: "Golang Developer", location: "Mumbai · Fulltime", salary: "$08K - $10K · 4 to 5 Yrs Exp" },
 ]
 
-const tabContent = {
-  Details: [
-    "Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).",
-    "Design & Create highly engaging industry-related content in both photo, gif & video format",
-    "Publish Posts on various social media channels",
-    "Promote content on social networks and monitor engagement (e.g. comments and shares)",
-    "Research industry-related topics",
-    "Editing audio and sound design on projects",
-    "Engage in opportunities to develop original content and concepts for web and mobile",
-    "Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.",
-    "Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels",
-  ],
-  Requirements: [
-    "3+ years of experience in a similar role",
-    "Strong communication and interpersonal skills",
-    "Proficiency in design tools such as Figma, Adobe XD",
-    "Experience with modern frameworks and tools",
-    "Ability to work independently and in a team",
-    "Strong problem-solving skills",
-    "Bachelor's degree in relevant field preferred",
-  ],
-  Responsibilities: [
-    "Lead and manage project timelines and deliverables",
-    "Collaborate with cross-functional teams",
-    "Ensure quality standards are met across all outputs",
-    "Report progress to senior management",
-    "Mentor junior team members",
-    "Conduct research and present findings",
-    "Participate in client meetings and presentations",
-  ],
-}
+const details = [
+  "Create and edit video content for multi-platform use and distribution for social media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).",
+  "Design & Create highly engaging industry-related content in both photo, gif & video format",
+  "Publish Posts on various social media channels",
+  "Promote content on social networks and monitor engagement (e.g. comments and shares)",
+  "Research industry-related topics",
+  "Editing audio and sound design on projects",
+  "Engage in opportunities to develop original content and concepts for web and mobile",
+  "Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.",
+  "Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels",
+]
+
+const requirements = [
+  "3+ years of experience in a similar role",
+  "Strong communication and interpersonal skills",
+  "Proficiency in design tools such as Figma, Adobe XD",
+  "Experience with modern frameworks and tools",
+  "Ability to work independently and in a team",
+  "Strong problem-solving skills",
+  "Bachelor's degree in relevant field preferred",
+]
+
+const responsibilities = [
+  "Lead and manage project timelines and deliverables",
+  "Collaborate with cross-functional teams",
+  "Ensure quality standards are met across all outputs",
+  "Report progress to senior management",
+  "Mentor junior team members",
+  "Conduct research and present findings",
+  "Participate in client meetings and presentations",
+]
 
 export default function Inner() {
   const { id } = useParams()
   const job = jobs.find(j => j.id === Number(id))
-  const [activeTab, setActiveTab] = useState("Details")
+  const [activeTab, setActiveTab] = useState("details")
 
 
   return (
     <>
-      <div className="max-w-[1536px] px-[20px] pb-[72px] pt-[72px] sm:px-[50px] lg:pb-[96px] lg:pt-[120px] xc:px-[140px]">
+      <div className="mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] pb-[72px] pt-[72px] sm:px-[50px] lg:pb-[96px] lg:pt-[120px] xc:px-[140px]">
         <div className="flex flex-col items-start justify-between gap-[40px] lg:flex-row">
           <div className="pb-[24px] text-[14px] opacity-[87%] text-[#232536] ">
             <p>CAREER AT ETHER</p>
@@ -87,35 +87,72 @@ export default function Inner() {
 
         <div className="mt-[96px] bg-[#EEF9FA]">
           <div className="flex flex-wrap justify-center gap-[20px] border-b border-[#E0E0E0] sm:gap-[80px]">
-            {Object.keys(tabContent).map(tab => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`py-[20px] text-[18px] font-[600] relative transition-colors ${activeTab === tab
-                  ? "text-[#444CFC]"
-                  : "text-[#232536]"
-                  }`}
-              >
-                {tab}
-                {activeTab === tab && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#444CFC] rounded-t-full"></span>
-                )}
-              </button>
-            ))}
+            <button
+              onClick={() => setActiveTab("details")}
+              className={`relative py-[20px] text-[18px] font-[600] transition-colors ${activeTab === "details" ? "text-[#444CFC]" : "text-[#232536]"}`}
+            >
+              Details
+              {activeTab === "details" && (
+                <span className="absolute bottom-0 left-0 right-0 h-[3px] rounded-t-full bg-[#444CFC]"></span>
+              )}
+            </button>
+
+            <button
+              onClick={() => setActiveTab("requirements")}
+              className={`relative py-[20px] text-[18px] font-[600] transition-colors ${activeTab === "requirements" ? "text-[#444CFC]" : "text-[#232536]"}`}
+            >
+              Requirements
+              {activeTab === "requirements" && (
+                <span className="absolute bottom-0 left-0 right-0 h-[3px] rounded-t-full bg-[#444CFC]"></span>
+              )}
+            </button>
+
+            <button
+              onClick={() => setActiveTab("responsibilities")}
+              className={`relative py-[20px] text-[18px] font-[600] transition-colors ${activeTab === "responsibilities" ? "text-[#444CFC]" : "text-[#232536]"}`}
+            >
+              Responsibilities
+              {activeTab === "responsibilities" && (
+                <span className="absolute bottom-0 left-0 right-0 h-[3px] rounded-t-full bg-[#444CFC]"></span>
+              )}
+            </button>
           </div>
 
           <div className="px-[20px] py-[40px] sm:px-[48px] lg:px-[140px] lg:py-[48px]">
-            <ul className="flex flex-col gap-[20px]">
-              {tabContent[activeTab].map((item, index) => (
-                <li key={index} className="flex items-start gap-[12px] text-[#232536] leading-[28px]">
-                  <span className="mt-[10px] w-[6px] h-[6px] rounded-full bg-[#232536] flex-shrink-0"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+            {activeTab === "details" && (
+              <ul className="flex flex-col gap-[20px]">
+                {details.map((item, index) => (
+                  <li key={index} className="flex items-start gap-[12px] text-[#232536] leading-[28px]">
+                    <span className="mt-[10px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[#232536]"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {activeTab === "requirements" && (
+              <ul className="flex flex-col gap-[20px]">
+                {requirements.map((item, index) => (
+                  <li key={index} className="flex items-start gap-[12px] text-[#232536] leading-[28px]">
+                    <span className="mt-[10px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[#232536]"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {activeTab === "responsibilities" && (
+              <ul className="flex flex-col gap-[20px]">
+                {responsibilities.map((item, index) => (
+                  <li key={index} className="flex items-start gap-[12px] text-[#232536] leading-[28px]">
+                    <span className="mt-[10px] h-[6px] w-[6px] flex-shrink-0 rounded-full bg-[#232536]"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
-
 
         <div className="mt-[94px]">
           <h2 className="text-[32px] font-[600] text-[#232536] mb-[32px]">Apply Now</h2>

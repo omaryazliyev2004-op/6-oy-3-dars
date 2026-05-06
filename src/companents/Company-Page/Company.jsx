@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Header/header'
 import Company_Hero from './Main/Sections/Company-Hero'
 import Story from './Main/Sections/Story'
 import Sec_2 from '../Main/2-section/2-sec'

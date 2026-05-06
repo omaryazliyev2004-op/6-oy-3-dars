@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WorkCulture() {
     return (
-        <section className="max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
+        <section className="mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
 
             <div className="max-w-[600px]">
                 <span className="text-[14px] font-[500] text-[#232536] opacity-[60%]">

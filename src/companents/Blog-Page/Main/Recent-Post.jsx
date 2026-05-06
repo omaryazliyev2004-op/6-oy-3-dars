@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RecentPost() {
     return (
-        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]'>
+        <section className='mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]'>
             <h2 className='mb-[48px] text-[32px] font-[700] text-[#232536] sm:text-[40px]'>Read Recent Post</h2>
 
             <div className='grid gap-[24px] lg:grid-cols-2'>

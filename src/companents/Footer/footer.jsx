@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 export default function Footer() {
     return (
         <footer className="pt-[72px] lg:pt-[96px]">
-            <div className="max-w-[1530px] px-[20px] sm:px-[50px] xc:px-[140px]">
+            <div className="mx-[20px] px-[20px] sm:mx-[50px] xc:mx-[100px] sm:px-[50px] xc:px-[140px]">
                 <div className="mb-[24px] grid w-[14px] grid-cols-2 gap-[2px]">
                     <span className="h-[6px] w-[6px] bg-[#FFA155]" />
                     <span className="h-[6px] w-[6px] bg-[#444CFC]" />
@@ -74,7 +74,7 @@ export default function Footer() {
             </div>
 
             <div className="mt-[64px] bg-[#FFE6D2] px-[20px] sm:px-[50px] xc:px-[140px]">
-                <div className="flex max-w-[1530px] flex-col gap-[24px] py-[28px] sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex mx-[20px] sm:mx-[50px] xc:mx-[100px] flex-col gap-[24px] py-[28px] sm:flex-row sm:items-center sm:justify-between">
                     <div className="flex flex-col gap-[12px] sm:flex-row sm:items-center sm:gap-[32px]">
                         <h2 className="text-[32px] flex items-center font-bold text-[#232536]">{`{Finsweet`}</h2>
                         <p className="text-[16px] text-[#232536]">©2021 Finsweet</p>
