@@ -21,7 +21,7 @@ export default function Hero() {
                 </div>
                 <div className='w-full lg:w-auto'>
                     <div className="relative inline-block w-full max-w-[560px] bg-[#23253a] p-3 sm:p-7">
-                        <img src="/img/Image.png" alt="" className='w-full' />
+                        <img src="/img/Image (16).png" alt="" className='w-full' />
                         <span className="absolute left-3 top-3 h-[20px] w-[20px] bg-[#f6a25c] sm:left-7 sm:top-7 sm:h-[26px] sm:w-[26px]" />
                         <span className="absolute left-3 top-[32px] h-[12px] w-[12px] bg-[#4c4cff] sm:left-7 sm:top-[53px] sm:h-[14px] sm:w-[14px]" />
                         <span className="absolute bottom-3 left-3 h-[20px] w-[20px] bg-[#f6a25c] sm:bottom-7 sm:left-7 sm:h-[26px] sm:w-[26px]" />
