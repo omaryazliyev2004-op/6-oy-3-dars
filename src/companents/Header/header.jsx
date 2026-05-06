@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const linkClass = ({ isActive }) =>
-        `font-medium leading-[24px] text-white transition-opacity ${isActive ? 'opacity-100' : 'opacity-60 hover:opacity-100'
-        }`
+         `relative h-[80px] flex items-center font-medium leading-[24px] text-white transition-opacity
+         before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[3px] before:bg-[#FFA155]
+         ${isActive ? 'opacity-100 before:block' : 'opacity-60 hover:opacity-100 before:hidden'}`
 
     return (
         <div className='bg-[#232536]'>
@@ -21,7 +22,7 @@ export default function Header() {
                     <NavLink className={linkClass} to="/blog">Blog</NavLink>
                     <NavLink className={linkClass} to="/contact">Contact us</NavLink>
                     <NavLink
-                        to="/clone"
+                        to="/"
                         className="font-medium leading-[24px] text-[#FFD3AF] flex items-center gap-[10px] hover:opacity-80 transition-opacity"
                     >
                         Clone project
@@ -32,7 +33,6 @@ export default function Header() {
                 <div className='aq:hidden'>
                     <i className="fa-solid fa-bars text-[24px] text-white"></i>
                 </div>
-
             </header>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 const jobs = [
     { id: 1, title: "Full Stack Developer", location: "Bengaluru · Full Time", salary: "$10K - $18K · No equity" },
@@ -13,22 +13,19 @@ const jobs = [
     { id: 9, title: "Golang Developer", location: "Mumbai · Fulltime", salary: "$08K - $10K · 4 to 5 Yrs Exp" },
 ]
 
-
-export default function Careers() {
+export default function Info() {
     const navigate = useNavigate()
 
     return (
         <section className="bg-[#ECF8F9] px-[140px] py-[96px]">
             <div className="grid grid-cols-3 gap-[32px]">
-
                 {jobs.map(job => (
                     <div key={job.id} className="bg-white p-[32px]">
                         <h3 className="font-[600] text-[#232536]">{job.title}</h3>
                         <p className="mt-[8px] text-[#5D5F6D]">{job.location}</p>
                         <p className="text-[#5D5F6D]">{job.salary}</p>
-
                         <button
-                            onClick={() => navigate(`/career/${job.id}`)}
+                            onClick={() => navigate(`/career-inner/${job.id}`)}
                             className="mt-[20px] text-[#444CFC] flex items-center gap-[8px]"
                         >
                             Apply Now →

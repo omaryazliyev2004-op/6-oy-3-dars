@@ -21,7 +21,7 @@ export default function Hero() {
                 </div>
                 <div>
                     <div className="relative inline-block bg-[#23253a] p-7">
-                        <img src="/img/Image.svg" alt="" />
+                        <img src="/img/Image.png" alt="" />
                         <span className="absolute left-7 top-7 h-[26px] w-[26px] bg-[#f6a25c]" />
                         <span className="absolute left-7 top-[53px] h-[14px] w-[14px] bg-[#4c4cff]" />
                         <span className="absolute left-7 bottom-7 h-[26px] w-[26px] bg-[#f6a25c]" />
