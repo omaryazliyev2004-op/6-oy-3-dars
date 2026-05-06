@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function WorkCulture() {
     return (
-        <section className=" py-[96px] px-[140px]">
+        <section className="max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
 
             <div className="max-w-[600px]">
                 <span className="text-[14px] font-[500] text-[#232536] opacity-[60%]">
                     OUR WORK & CULTURE
                 </span>
 
-                <h2 className="mt-[16px] text-[48px] leading-[58px] font-[600] text-[#232536]">
+                <h2 className="mt-[16px] text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]">
                     Come and join a team of highly skilled professionals.
                 </h2>
 
@@ -18,7 +18,7 @@ export default function WorkCulture() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-[12px] mt-[64px]">
+            <div className="mt-[48px] grid gap-[12px] sm:grid-cols-2 lg:mt-[64px] lg:grid-cols-3">
 
                 <div className="bg-white p-[32px] border border-[#E6E6E6]">
                     <div className="w-[32px] h-[32px] flex items-center justify-center bg-[#FFE6D2] rounded-full mb-[16px]">😷</div>

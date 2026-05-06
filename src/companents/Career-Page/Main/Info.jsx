@@ -17,8 +17,8 @@ export default function Info() {
     const navigate = useNavigate()
 
     return (
-        <section className="bg-[#ECF8F9] px-[140px] py-[96px]">
-            <div className="grid grid-cols-3 gap-[32px]">
+        <section className="max-w-[1530px] bg-[#ECF8F9] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]">
+            <div className="grid gap-[24px] md:grid-cols-2 lg:grid-cols-3 lg:gap-[32px]">
                 {jobs.map(job => (
                     <div key={job.id} className="bg-white p-[32px]">
                         <h3 className="font-[600] text-[#232536]">{job.title}</h3>

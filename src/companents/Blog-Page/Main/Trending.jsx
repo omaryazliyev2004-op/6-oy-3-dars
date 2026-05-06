@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 
 export default function Trending() {
     return (
-        <section className='pb-[96px] max-w-[1530px] px-[140px] mt-[96px] '>
-            <div className='flex items-start justify-between '>
+        <section className='mt-[72px] max-w-[1530px] px-[20px] pb-[72px] sm:px-[50px] lg:mt-[96px] lg:pb-[96px] xc:px-[140px]'>
+            <div className='flex flex-col items-start justify-between gap-[48px] lg:flex-row'>
                 <div>
                     <div className='w-[24px] h-[24px] bg-[#FFD3AF] '></div>
                     <span className='font-[500] !mt-[21px] text-[14px] space-x-[3px] text-[#000000] opacity-[87%] inline-block '>TRENDING</span>
-                    <h2 className='mt-[24px] font-[600] text-[48px] leading-[58px] text-[#232536] max-w-[600px] '>Breaking the code How did we build our Figma plugin </h2>
+                    <h2 className='mt-[24px] max-w-[600px] text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>Breaking the code How did we build our Figma plugin </h2>
                     <p className='mt-[24px] font-[400] leading-[24px] text-[#232536] opacity-[87%] max-w-[580px] '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized. We aim to attain the.</p>
                     <div className='mt-[24px] '>
                         <NavLink to={"/bloginner"}>
@@ -20,7 +20,7 @@ export default function Trending() {
                         </NavLink>
                     </div>
 
-                    <div className='mt-[40px] flex items-center gap-[18px] '>
+                    <div className='mt-[40px] flex flex-col items-start gap-[12px] sm:flex-row sm:items-center sm:gap-[18px]'>
                         <div className='flex items-center gap-[12px] '>
                             <img src="/img/profil.png" alt="" />
                             <p className='font-[400] text-[#232536] opacity-[87%] '>Andrew Jonson</p>
@@ -30,16 +30,16 @@ export default function Trending() {
                             <p className='font-[400] text-[#232536] opacity-[60%] '>Posted on 27th January 2021</p>
                         </div>
                     </div>
-                    <div className='flex mt-[49px] '>
-                        <img src="/img/group.png" alt="" />
-                        <div className='h-[380px] w-[10px]  '>
+                    <div className='mt-[49px] flex'>
+                        <img src="/img/group.png" alt="" className='w-full max-w-[600px] object-cover' />
+                        <div className='hidden h-[380px] w-[10px] sm:block'>
                             <span className='h-[20%] w-[10px] inline-block bg-[#444CFC] '></span>
                             <span className='h-[50%] w-[10px] inline-block bg-[#FFD3AF] '></span>
                             <span className='h-[30%] w-[10px] inline-block bg-[#FFA155] '></span>
                         </div>
                     </div>
                 </div>
-                <div className='w-[515px] relative h-[738px] pt-[72px] pl-[72px] bg-[#FFDFC6] '>
+                <div className='relative min-h-[620px] w-full bg-[#FFDFC6] px-[28px] py-[56px] sm:px-[48px] lg:h-[738px] lg:w-[515px] lg:pl-[72px] lg:pt-[72px]'>
                     <div className='absolute top-0 right-0 '>
                         <img src="/img/Shapes.png" alt="" />
                     </div>

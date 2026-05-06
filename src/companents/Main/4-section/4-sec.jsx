@@ -43,15 +43,15 @@ const processCards = [
 
 export default function Sec_4() {
   return (
-    <section className="bg-white px-[140px] py-[100px]">
-      <div className="mx-auto max-w-[1280px]">
-        <div className="flex items-start justify-between">
+    <section className="max-w-[1530px] bg-white px-[20px] py-[72px] sm:px-[50px] lg:py-[100px] xc:px-[140px]">
+      <div className="max-w-[1280px]">
+        <div className="flex items-start justify-between gap-[24px]">
           <div className="max-w-[625px]">
             <p className="text-[14px] font-medium uppercase tracking-[3px] text-[#232536]">
               Our Process
             </p>
 
-            <h2 className="mt-[16px] text-[48px] font-[600] leading-[58px] max-w-[770px] text-[#232536]">
+            <h2 className="mt-[16px] max-w-[770px] text-[32px] font-[600] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]">
               The process we are working With Our client 
             </h2>
 
@@ -69,7 +69,7 @@ export default function Sec_4() {
           </div>
         </div>
 
-        <div className="mt-[68px] grid grid-cols-3 gap-x-[32px] gap-y-[32px]">
+        <div className="mt-[56px] grid gap-[24px] md:grid-cols-2 lg:mt-[68px] lg:grid-cols-3 lg:gap-[32px]">
           {processCards.map((item) => (
             <div
               key={item.number}

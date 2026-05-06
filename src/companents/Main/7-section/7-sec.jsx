@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Sec_6() {
   return (
-    <section className="bg-white px-[80px] py-[120px]">
-      <div className="mx-auto relative h-[333px] w-[1256px] overflow-hidden bg-[#666DFF] px-[96px] py-[72px]">
+    <section className="max-w-[1530px] bg-white px-[20px] py-[72px] sm:px-[50px] lg:py-[120px] xc:px-[80px]">
+      <div className="relative min-h-[333px] w-full max-w-[1256px] overflow-hidden bg-[#666DFF] px-[24px] py-[56px] sm:px-[48px] lg:px-[96px] lg:py-[72px]">
         <div className="absolute left-0 top-0 grid grid-cols-2 gap-0">
           <span className="h-[20px] w-[20px] bg-[#FFA155]" />
           <span className="h-[20px] w-[20px] bg-[#FFD3AF]" />
@@ -18,13 +18,13 @@ export default function Sec_6() {
           <span className="h-[32px] bg-[#444CFC]" />
         </div>
 
-        <div className="flex h-full items-center justify-between gap-[60px]">
+        <div className="flex h-full flex-col items-start justify-between gap-[32px] lg:flex-row lg:items-center lg:gap-[60px]">
           <div className="max-w-[490px]">
             <p className="text-[14px] font-medium uppercase tracking-[3px] text-white">
               Newsletter
             </p>
 
-            <h2 className="mt-[14px] text-[36px] font-semibold leading-[54px] text-white">
+            <h2 className="mt-[14px] text-[28px] font-semibold leading-[40px] text-white sm:text-[36px] sm:leading-[54px]">
               Subscribe our News Letter
               <br />
               to get Latest Updates.

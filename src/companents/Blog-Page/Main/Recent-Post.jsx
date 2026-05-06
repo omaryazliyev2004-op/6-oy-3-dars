@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function RecentPost() {
     return (
-        <section className='px-[140px] py-[96px]'>
-            <h2 className='font-[700] text-[40px] text-[#232536] mb-[48px]'>Read Recent Post</h2>
+        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]'>
+            <h2 className='mb-[48px] text-[32px] font-[700] text-[#232536] sm:text-[40px]'>Read Recent Post</h2>
 
-            <div className='grid grid-cols-2 gap-[24px]'>
+            <div className='grid gap-[24px] lg:grid-cols-2'>
 
-                <div className='flex border-[2px]  border-transparent hover:border-[#F5A623] transition-all duration-300'>
-                    <div className='w-[260px] flex-shrink-0 overflow-hidden'>
-                        <img src="/img/post1.png" alt="" className='w-full h-full object-cover' />
+                <div className='flex flex-col border-[2px] border-transparent transition-all duration-300 hover:border-[#F5A623] sm:flex-row'>
+                    <div className='h-[220px] w-full flex-shrink-0 overflow-hidden sm:h-auto sm:w-[260px]'>
+                        <img src="/img/post1.png" alt="" className='h-full w-full object-cover' />
                     </div>
                     <div className='flex flex-col justify-center px-[32px] py-[24px]'>
                         <h3 className='font-[700] text-[22px] text-[#232536] leading-[32px] mb-[24px]'>
@@ -25,9 +25,9 @@ export default function RecentPost() {
                     </div>
                 </div>
 
-                <div className='flex border-[2px] border-transparent hover:border-[#F5A623] transition-all duration-300'>
-                    <div className='w-[260px] flex-shrink-0 overflow-hidden'>
-                        <img src="/img/post2.png" alt="" className='w-full h-full object-cover' />
+                <div className='flex flex-col border-[2px] border-transparent transition-all duration-300 hover:border-[#F5A623] sm:flex-row'>
+                    <div className='h-[220px] w-full flex-shrink-0 overflow-hidden sm:h-auto sm:w-[260px]'>
+                        <img src="/img/post2.png" alt="" className='h-full w-full object-cover' />
                     </div>
                     <div className='flex flex-col justify-center px-[32px] py-[24px]'>
                         <h3 className='font-[700] text-[22px] text-[#232536] leading-[32px] mb-[24px]'>
@@ -43,9 +43,9 @@ export default function RecentPost() {
                     </div>
                 </div>
 
-                <div className='flex border-[2px] border-transparent hover:border-[#F5A623] transition-all duration-300'>
-                    <div className='w-[260px] flex-shrink-0 overflow-hidden'>
-                        <img src="/img/post3.png" alt="" className='w-full h-full object-cover' />
+                <div className='flex flex-col border-[2px] border-transparent transition-all duration-300 hover:border-[#F5A623] sm:flex-row'>
+                    <div className='h-[220px] w-full flex-shrink-0 overflow-hidden sm:h-auto sm:w-[260px]'>
+                        <img src="/img/post3.png" alt="" className='h-full w-full object-cover' />
                     </div>
                     <div className='flex flex-col justify-center px-[32px] py-[24px]'>
                         <h3 className='font-[700] text-[22px] text-[#232536] leading-[32px] mb-[24px]'>
@@ -61,9 +61,9 @@ export default function RecentPost() {
                     </div>
                 </div>
 
-                <div className='flex border-[2px] border-transparent hover:border-[#F5A623] transition-all duration-300'>
-                    <div className='w-[260px] flex-shrink-0 overflow-hidden'>
-                        <img src="/img/post4.png" alt="" className='w-full h-full object-cover' />
+                <div className='flex flex-col border-[2px] border-transparent transition-all duration-300 hover:border-[#F5A623] sm:flex-row'>
+                    <div className='h-[220px] w-full flex-shrink-0 overflow-hidden sm:h-auto sm:w-[260px]'>
+                        <img src="/img/post4.png" alt="" className='h-full w-full object-cover' />
                     </div>
                     <div className='flex flex-col justify-center px-[32px] py-[24px]'>
                         <h3 className='font-[700] text-[22px] text-[#232536] leading-[32px] mb-[24px]'>

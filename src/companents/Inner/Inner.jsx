@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useState } from "react"
 import Sec_6 from "../Main/7-section/7-sec"
 
@@ -49,18 +49,17 @@ const tabContent = {
 
 export default function Inner() {
   const { id } = useParams()
-  const navigate = useNavigate()
   const job = jobs.find(j => j.id === Number(id))
   const [activeTab, setActiveTab] = useState("Details")
 
 
   return (
     <>
-      <div className="pt-[120px] max-w-[1536px] mx-auto px-[140px] pb-[96px]">
-        <div className="flex items-start justify-between">
+      <div className="max-w-[1536px] px-[20px] pb-[72px] pt-[72px] sm:px-[50px] lg:pb-[96px] lg:pt-[120px] xc:px-[140px]">
+        <div className="flex flex-col items-start justify-between gap-[40px] lg:flex-row">
           <div className="pb-[24px] text-[14px] opacity-[87%] text-[#232536] ">
             <p>CAREER AT ETHER</p>
-            <h1 className="text-[48px] font-[600] text-[#232536]">{job.title}</h1>
+            <h1 className="text-[34px] font-[600] text-[#232536] sm:text-[48px]">{job.title}</h1>
             <p className="mt-[12px] text-[#5D5F6D]">{job.location}</p>
             <p className="text-[#5D5F6D]">{job.salary}</p>
             <button className="mt-[32px] relative flex h-16 w-[182px] items-center justify-between overflow-hidden bg-[#4c4cff] px-5 pl-9 text-white">
@@ -74,7 +73,7 @@ export default function Inner() {
               <span className="text-[24px] leading-none">→</span>
             </button>
           </div>
-          <div className="w-[515px] h-[324px] pt-[82px] pl-[80px] bg-[#FFE0C7] relative ">
+          <div className="relative min-h-[324px] w-full bg-[#FFE0C7] px-[32px] py-[64px] lg:w-[515px] lg:pl-[80px] lg:pt-[82px]">
             <div className="absolute top-0 right-0 ">
               <img src="/img/Shapes.png" alt="" />
             </div>
@@ -87,7 +86,7 @@ export default function Inner() {
         </div>
 
         <div className="mt-[96px] bg-[#EEF9FA]">
-          <div className="flex justify-center gap-[80px] border-b border-[#E0E0E0]">
+          <div className="flex flex-wrap justify-center gap-[20px] border-b border-[#E0E0E0] sm:gap-[80px]">
             {Object.keys(tabContent).map(tab => (
               <button
                 key={tab}
@@ -105,7 +104,7 @@ export default function Inner() {
             ))}
           </div>
 
-          <div className="px-[140px] py-[48px]">
+          <div className="px-[20px] py-[40px] sm:px-[48px] lg:px-[140px] lg:py-[48px]">
             <ul className="flex flex-col gap-[20px]">
               {tabContent[activeTab].map((item, index) => (
                 <li key={index} className="flex items-start gap-[12px] text-[#232536] leading-[28px]">
@@ -122,7 +121,7 @@ export default function Inner() {
           <h2 className="text-[32px] font-[600] text-[#232536] mb-[32px]">Apply Now</h2>
 
           <div className="flex flex-col gap-[16px]">
-            <div className="flex gap-[16px]">
+            <div className="flex flex-col gap-[16px] sm:flex-row">
               <input
                 type="text"
                 placeholder="First Name"
@@ -135,7 +134,7 @@ export default function Inner() {
               />
             </div>
 
-            <div className="flex gap-[16px]">
+            <div className="flex flex-col gap-[16px] sm:flex-row">
               <input
                 type="email"
                 placeholder="Email Id"

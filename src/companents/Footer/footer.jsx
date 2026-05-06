@@ -4,17 +4,17 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 export default function Footer() {
     return (
-        <footer className="pt-[96px]">
-            <div className="max-w-[1530px] px-[140px]">
+        <footer className="pt-[72px] lg:pt-[96px]">
+            <div className="max-w-[1530px] px-[20px] sm:px-[50px] xc:px-[140px]">
                 <div className="mb-[24px] grid w-[14px] grid-cols-2 gap-[2px]">
                     <span className="h-[6px] w-[6px] bg-[#FFA155]" />
                     <span className="h-[6px] w-[6px] bg-[#444CFC]" />
                     <span className="h-[6px] w-[6px] bg-[#FFD3AF]" />
                     <span className="h-[6px] w-[6px] bg-[#444CFC]" />
                 </div>
-                <div className="flex items-start justify-between gap-[80px]">
+                <div className="flex flex-col items-start justify-between gap-[48px] lg:flex-row lg:gap-[80px]">
                     <div className="max-w-[420px]">
-                        <h2 className="text-[48px] font-[600] leading-[58px] text-[#232536]">
+                        <h2 className="text-[34px] font-[600] leading-[44px] text-[#232536] sm:text-[48px] sm:leading-[58px]">
                             Let`s make <br /> something special
                         </h2>
                         <h3 className="mt-[32px] text-[24px] font-semibold leading-[36px] text-[#232536]">
@@ -31,7 +31,7 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex gap-[60px] pt-[16px]">
+                    <div className="grid w-full grid-cols-1 gap-[32px] pt-[16px] sm:grid-cols-3 lg:w-auto lg:gap-[60px]">
                         <div className="space-y-[16px]">
                             <NavLink to="/" className="block text-[16px] font-semibold text-[#232536] hover:text-[#444CFC]">Home</NavLink>
                             <NavLink to="/company" className="block text-[16px] font-semibold text-[#232536] hover:text-[#444CFC]">Company</NavLink>
@@ -73,9 +73,9 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="mt-[64px] max-w-[1530px] px-[140px] bg-[#FFE6D2]">
-                <div className="flex items-center justify-between py-[28px]">
-                    <div className="flex items-center gap-[32px]">
+            <div className="mt-[64px] bg-[#FFE6D2] px-[20px] sm:px-[50px] xc:px-[140px]">
+                <div className="flex max-w-[1530px] flex-col gap-[24px] py-[28px] sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex flex-col gap-[12px] sm:flex-row sm:items-center sm:gap-[32px]">
                         <h2 className="text-[32px] flex items-center font-bold text-[#232536]">{`{Finsweet`}</h2>
                         <p className="text-[16px] text-[#232536]">©2021 Finsweet</p>
                     </div>

@@ -2,33 +2,33 @@ import React from 'react'
 
 export default function Sec_1() {
     return (
-        <section className='pt-[120px] pb-[98px] max-w-[1530px] px-[140px]'>
-            <div className='flex items-center justify-between'>
+        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
+            <div className='grid gap-[32px] lg:grid-cols-2 lg:items-center'>
                 <div>
                     <p className='font-medium text-[14px] leading-[20px] space-x-[3px] text-[#000000] '>ABOUT US</p>
-                    <h2 className='mt-[16px] font-bold text-[48px] leading-[58px] text-[#232536] '>The company leads entire webdesign process from concept to delivery.</h2>
+                    <h2 className='mt-[16px] text-[32px] font-bold leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>The company leads entire webdesign process from concept to delivery.</h2>
                 </div>
                 <div>
-                    <h4 className='font-bold text-[36px] leading-[54px] text-[#232536]'>The Era Of Technology.</h4>
+                    <h4 className='text-[28px] font-bold leading-[40px] text-[#232536] sm:text-[36px] sm:leading-[54px]'>The Era Of Technology.</h4>
                     <p className='font-normal mt-[16px] leading-[24px] text-[#5D5F6D] '>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. </p>
                 </div>
             </div>
-            <div className="relative inline-block bg-white p-3 mt-[48px] ">
-                <div className="grid grid-cols-3 gap-1">
+            <div className="relative mt-[48px] block bg-white p-3">
+                <div className="grid gap-2 sm:grid-cols-3">
                     <img
                         src="/img/rasm1.svg"
                         alt="team"
-                        className="h-[446px] object-cover"
+                        className="h-[260px] w-full object-cover sm:h-[360px] lg:h-[446px]"
                     />
                     <img
                         src="/img/rasm2.svg"
                         alt="meeting"
-                        className="h-[446px] object-cover"
+                        className="h-[260px] w-full object-cover sm:h-[360px] lg:h-[446px]"
                     />
                     <img
                         src="/img/rasm3.svg"
                         alt="office"
-                        className="h-[446px] object-cover"
+                        className="h-[260px] w-full object-cover sm:h-[360px] lg:h-[446px]"
                     />
                 </div>
 
@@ -75,7 +75,7 @@ export default function Sec_1() {
 
                 <a
                     href="#"
-                    className="ml-auto mt-6 flex items-center gap-3 text-[16px] font-medium text-[#4c4cff]"
+                    className="mt-6 flex items-center gap-3 text-[16px] font-medium text-[#4c4cff] sm:ml-auto"
                 >
                     Read about us
                     <span className="text-[24px] text-[#000000] leading-none">→</span>

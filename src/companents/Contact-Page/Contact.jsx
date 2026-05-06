@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <section className='px-[140px] py-[96px]'>
-            <div className='flex items-start justify-between gap-[80px]'>
+        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]'>
+            <div className='flex flex-col items-start justify-between gap-[56px] lg:flex-row lg:gap-[80px]'>
 
                 <div className='flex-1'>
                     <div className='w-[24px] h-[24px] bg-[#FFD3AF]'></div>
                     <p className='mt-[24px] font-[500] text-[14px] tracking-[3px] text-[#232536]'>CONTACT US</p>
-                    <h2 className='mt-[16px] font-[700] text-[48px] leading-[58px] text-[#232536]'>
+                    <h2 className='mt-[16px] text-[32px] font-[700] leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]'>
                         Have a Question ? <br />
                         Let's Get in Touch with us 👋
                     </h2>
@@ -68,13 +68,13 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className='relative w-[420px] flex-shrink-0'>
+                <div className='relative w-full flex-shrink-0 lg:w-[420px]'>
                     <div className='absolute -top-[16px] -right-[16px] flex'>
                         <div className='w-[48px] h-[32px] bg-[#FFD3AF]'></div>
                         <div className='w-[32px] h-[32px] bg-[#FFA155]'></div>
                     </div>
 
-                    <div className='bg-[#444CFC] px-[48px] py-[64px] text-white relative z-10'>
+                    <div className='relative z-10 bg-[#444CFC] px-[28px] py-[48px] text-white sm:px-[48px] sm:py-[64px]'>
 
                         <div className='mb-[40px]'>
                             <p className='text-[14px] opacity-[70%] mb-[16px]'>Location</p>

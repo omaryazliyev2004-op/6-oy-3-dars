@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function AllPosts() {
     return (
-        <section className='px-[140px] py-[96px]'>
-            <h2 className='font-[700] text-[40px] text-[#232536] mb-[48px]'>All posts</h2>
+        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[96px] xc:px-[140px]'>
+            <h2 className='mb-[48px] text-[32px] font-[700] text-[#232536] sm:text-[40px]'>All posts</h2>
 
-            <div className='grid grid-cols-3 gap-[32px]'>
+            <div className='grid gap-[32px] sm:grid-cols-2 lg:grid-cols-3'>
 
                 <div>
                     <img src="/img/post5.png" alt="" className='w-full h-[220px] object-cover' />

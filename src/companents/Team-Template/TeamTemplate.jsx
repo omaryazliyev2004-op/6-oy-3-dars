@@ -16,7 +16,7 @@ export default function TeamTemplate() {
   const member = teamData.find(m => m.id === Number(id))
 
   return (
-    <div className="pt-[120px] max-w-[1536px] mx-auto px-[140px]">
+    <div className="max-w-[1536px] px-[20px] pt-[72px] sm:px-[50px] lg:pt-[120px] xc:px-[140px]">
 
       <div className="flex flex-col items-center text-center py-[60px]">
         <img
@@ -36,15 +36,15 @@ export default function TeamTemplate() {
         </div>
       </div>
 
-      <div className="bg-[#ECF8F9] px-[60px] py-[50px] rounded-[8px] mb-[60px]">
+      <div className="mb-[60px] rounded-[8px] bg-[#ECF8F9] px-[20px] py-[40px] sm:px-[60px] sm:py-[50px]">
         <div className="flex flex-col">
           <span className="w-[16px] h-[16px] bg-[#444CFC] "></span>
           <h3 className="font-[600] mt-[10px] text-[24px] text-[#232536]">Blog posts from {member.name.split(' ')[0]}</h3>
         </div>
-        <div className="grid grid-cols-2 mt-[48px] gap-[24px]">
-          <div className='w=[624px] h-[248px] flex items-center justify-between bg-[#FFFFFF] '>
-            <img src="/img/blog1.png" alt="" />
-            <div className='pt-[32px] pl-[24px] '>
+        <div className="mt-[48px] grid gap-[24px] lg:grid-cols-2">
+          <div className='flex flex-col bg-[#FFFFFF] sm:flex-row sm:items-center'>
+            <img src="/img/blog1.png" alt="" className='h-[220px] w-full object-cover sm:h-[248px] sm:w-[260px]' />
+            <div className='px-[24px] py-[32px]'>
               <span className='font-[500] text-[14px] opacity-[60%] text-[#232536] '>Jan 19, 2021</span>
               <h4 className='mt-[8px] font-[600] text-[24px] leading-[36px] text-[#232536] max-w-[250px] '>Today’s best design trends for digital products</h4>
               <a href="#" className="text-[#444CFC] mt-[24px] text-[14px] font-[500] flex items-center gap-[8px]">
@@ -52,9 +52,9 @@ export default function TeamTemplate() {
               </a>
             </div>
           </div>
-          <div className='w=[624px] h-[248px] flex items-center justify-between bg-[#FFFFFF] '>
-            <img src="/img/blog2.png" alt="" />
-            <div className='pt-[32px] pl-[24px] '>
+          <div className='flex flex-col bg-[#FFFFFF] sm:flex-row sm:items-center'>
+            <img src="/img/blog2.png" alt="" className='h-[220px] w-full object-cover sm:h-[248px] sm:w-[260px]' />
+            <div className='px-[24px] py-[32px]'>
               <span className='font-[500] text-[14px] opacity-[60%] text-[#232536] '>Jan 19, 2021</span>
               <h4 className='mt-[8px] font-[600] text-[24px] leading-[36px] text-[#232536] max-w-[250px] '>A practical guide  building a brand strategy</h4>
               <a href="#" className="text-[#444CFC] mt-[24px] text-[14px] font-[500] flex items-center gap-[8px]">

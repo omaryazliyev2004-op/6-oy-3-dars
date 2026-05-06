@@ -16,23 +16,23 @@ export default function Team() {
     const navigate = useNavigate()
 
     return (
-        <section className='pt-[120px] pb-[98px] max-w-[1530px] px-[140px]'>
+        <section className='max-w-[1530px] px-[20px] py-[72px] sm:px-[50px] lg:py-[98px] xc:px-[140px]'>
             <span className='font-[500] text-[14px] text-[#000000]'>MEET OUR TEAM</span>
-            <h2 className='w-[610px] font-[600] text-[36px] leading-[54px] mt-[16px] text-[#232536]'>
+            <h2 className='mt-[16px] max-w-[610px] text-[30px] font-[600] leading-[42px] text-[#232536] sm:text-[36px] sm:leading-[54px]'>
                 Teamwork is the only way we work
             </h2>
-            <p className='mt-[24px] w-[500px] font-[400] leading-[24px] text-[#232536] opacity-[60%]'>
+            <p className='mt-[24px] max-w-[500px] font-[400] leading-[24px] text-[#232536] opacity-[60%]'>
                 Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable.
             </p>
 
-            <div className='grid grid-cols-4 gap-[4px] mt-[48px]'>
+            <div className='mt-[48px] grid grid-cols-1 gap-[4px] sm:grid-cols-2 lg:grid-cols-4'>
                 {teamData.map((member) => (
                     <div
                         key={member.id}
                         className="relative group cursor-pointer"
                         onClick={() => navigate(`/team/${member.id}`)}
                     >
-                        <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
+                        <img src={member.img} alt={member.name} className="h-[320px] w-full object-cover sm:h-full" />
 
                         <div className="absolute inset-0 bg-[#232536] opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
 

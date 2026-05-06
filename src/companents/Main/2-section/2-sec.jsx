@@ -17,14 +17,14 @@ const cards = [
 
 export default function Sec_2() {
   return (
-    <section className="mt-[96px] max-w-[1530px] px-[140px] bg-[#ECF8F9] px-[80px] py-[96px]">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-[80px]">
+    <section className="mt-[72px] max-w-[1530px] bg-[#ECF8F9] px-[20px] py-[72px] sm:px-[50px] lg:mt-[96px] lg:py-[96px] xc:px-[140px]">
+      <div className="flex max-w-[1280px] flex-col items-start justify-between gap-[48px] lg:flex-row lg:items-center lg:gap-[80px]">
         <div className="max-w-[620px]">
           <p className="text-[14px] font-medium uppercase tracking-[3px] text-[#232536]">
             Our Expertise
           </p>
 
-          <h2 className="mt-[16px] max-w-[520px] text-[48px] font-semibold leading-[58px] text-[#232536]">
+          <h2 className="mt-[16px] max-w-[520px] text-[32px] font-semibold leading-[42px] text-[#232536] sm:text-[40px] sm:leading-[50px] lg:text-[48px] lg:leading-[58px]">
             We want to get local identification in every corner of the world in
             this era of global citizenship
           </h2>
